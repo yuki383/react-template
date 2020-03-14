@@ -8,9 +8,13 @@
     "tsc": "tsc --noEmit true"
   },
   "dependencies": {
+    "react": "^16.13.0",
+    "react-dom": "^16.13.0",
     "typescript": "^3.8.3"
   },
   "devDependencies": {
+    "@types/react": "^16.9.23",
+    "@types/react-dom": "^16.9.5",
     "ts-loader": "^6.2.1",
     "webpack": "^4.42.0",
     "webpack-cli": "^3.3.11"

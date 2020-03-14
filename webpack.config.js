@@ -1,3 +1,4 @@
+const HtmlWebPackPlugin = require("html-webpack-plugin");
 const path = require("path");
 
 module.exports = {
@@ -12,7 +13,7 @@ module.exports = {
       },
       {
         test: /.(png|jpe?g|gif)$/i,
-        use: [{ loader: "file-loader", }]
+        loader: "file-loader"
       }
     ]
   },
@@ -26,5 +27,12 @@ module.exports = {
     filename: "bundle.js",
     path: path.resolve(__dirname, "dist")
   },
+  plugins: [
+    new HtmlWebPackPlugin({
+      title: "Html Plug",
+      template: "public/index.html",
+      favicon: "public/favicon.ico"
+    })
+  ],
   devtool: "eval-source-map"
 };

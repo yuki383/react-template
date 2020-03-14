@@ -13,7 +13,10 @@ module.exports = {
       },
       {
         test: /.(png|jpe?g|gif)$/i,
-        loader: "file-loader"
+        loader: "file-loader",
+        options: {
+          outputPath: "images",
+        }
       }
     ]
   },
@@ -38,6 +41,6 @@ module.exports = {
   devServer: {
     port: 3000,
     hot: true,
-    liveReload: false
+    liveReload: false,
   }
 };

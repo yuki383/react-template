@@ -4,7 +4,15 @@
   "main": "/src/index.ts",
   "license": "MIT",
   "private": true,
+  "scripts": {
+    "tsc": "tsc --noEmit true"
+  },
   "dependencies": {
     "typescript": "^3.8.3"
+  },
+  "devDependencies": {
+    "ts-loader": "^6.2.1",
+    "webpack": "^4.42.0",
+    "webpack-cli": "^3.3.11"
   }
 }

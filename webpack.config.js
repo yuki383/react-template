@@ -34,5 +34,10 @@ module.exports = {
       favicon: "public/favicon.ico"
     })
   ],
-  devtool: "eval-source-map"
+  devtool: "eval-source-map",
+  devServer: {
+    port: 3000,
+    hot: true,
+    liveReload: false
+  }
 };

@@ -6,7 +6,9 @@ module.exports = {
   extends: [
     "eslint:recommended",
     "plugin:react/recommended",
-    "plugin:@typescript-eslint/eslint-recommended"
+    "plugin:@typescript-eslint/eslint-recommended",
+    "plugin:prettier/recommended",
+    "prettier/react",
   ],
   globals: {
     Atomics: "readonly",
@@ -24,11 +26,12 @@ module.exports = {
   rules: {
     "react-hooks/rules-of-hooks": "error",
     "react-hooks/exhaustive-deps": "warn",
+    "prettier/prettier": ["error", { trailingComma: "all" }]
   },
   ignorePatterns: ["webpack.config.js", "dist/", "node_modules/"],
   settings: {
     react: {
-      version: require("react/package.json").version,
+      version: require("react/package.json").version
     }
   }
 };

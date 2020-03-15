@@ -8,7 +8,7 @@ module.exports = {
     "plugin:react/recommended",
     "plugin:@typescript-eslint/eslint-recommended",
     "plugin:prettier/recommended",
-    "prettier/react",
+    "prettier/react"
   ],
   globals: {
     Atomics: "readonly",
@@ -28,7 +28,7 @@ module.exports = {
     "react-hooks/exhaustive-deps": "warn",
     "prettier/prettier": ["error", { trailingComma: "all" }]
   },
-  ignorePatterns: ["webpack.config.js", "dist/", "node_modules/"],
+  ignorePatterns: ["*.js", "dist/", "node_modules/"],
   settings: {
     react: {
       version: require("react/package.json").version

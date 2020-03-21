@@ -15,7 +15,7 @@ module.exports = {
         test: /.(png|jpe?g|gif)$/i,
         loader: "file-loader",
         options: {
-          outputPath: "images",
+          outputPath: "images"
         }
       }
     ]
@@ -37,10 +37,16 @@ module.exports = {
       favicon: "public/favicon.ico"
     })
   ],
+  optimization: {
+    splitChunks: {
+      name: "vendor",
+      chunks: "all"
+    }
+  },
   devtool: "eval-source-map",
   devServer: {
     port: 3000,
     hot: true,
-    liveReload: false,
+    liveReload: false
   }
 };

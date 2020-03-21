@@ -5,8 +5,9 @@
   "license": "MIT",
   "private": true,
   "scripts": {
-    "tsc": "tsc --noEmit true",
     "dev": "node_modules/.bin/webpack-dev-server",
+    "build": "webpack --mode production",
+    "tsc": "tsc --noEmit true",
     "eslint": "eslint --fix --ext .tsx,.ts src/**",
     "test": "jest"
   },

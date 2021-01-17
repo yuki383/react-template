@@ -1,8 +1,8 @@
 {
   "compilerOptions": {
-    "target": "es5", 
+    "target": "ESNext",
     "module": "commonjs",
-    "jsx": "react",
+    "jsx": "react-jsx",
     "lib": ["es2015", "dom"],
     "strict": true,
     "esModuleInterop": true,
@@ -12,7 +12,7 @@
     "typeRoots": ["src/types", "node_modules/@types"],
     "baseUrl": "./",
     "paths": {
-      "images/*": ["public/images/*"],
+      "images/*": ["public/images/*"]
     }
   }
 }
